@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P2Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="newlg.css">
+   <style type="text/css">
+    *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+     body{
+      background-image: url("tackingimg1.jpg");
+      background-color: rgba(255,255,255,0.6);
+      background-blend-mode: lighten;
+      background-position: center;
+      background-size: cover;
+      height: 83vh;
+      //width: 95vw;
+     }
+     h1{
+      text-align: center;
+     }
+  .login{ 
+        background: royalblue;
+        font-weight: bold;
+        border: 3px solid black;
+      }
+#border {
+  text-align: center;
+  border-radius:5%;
+  background-color:cornflowerblue;
+  width: 400px;
+  height:80%;
+  border: 2px solid black;
+  padding: 50px;
+  margin-top: 50px;
+  display: block;
+  margin-left:35%;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+button{
+        width:250px;
+        height:60px;
+        cursor:pointer;
+        border:none;
+        border-radius:20px;
+        background-color:#F5F5F5;
+        color:black;
+        flex: inline-flex;
+        font-size:18px;
+        font-weight: bold;
+        margin: 15px;
+        cursor: pointer;
+}
+.b1,.b2,.b3,.b4,.b5{
+user-select:none;
+margin-top:20px;
+text-align: center;
+margin-left:10%;
+border:3px solid mediumblue;
+}
+@media(max-width: 900px){
+  .login div ul li{
+  font-size: 18px;
+  list-style-type:none;
+  color: white;
+  #float: left;
+}
+  h1{
+    font-size: 30px;
+  }
+#border {
+  width: 50%;
+  margin: 5% 25% 0% 25%;
+}
+button{
+  width: 80%;
+}
+}
+ @media(max-width: 600px){
+  .login div ul li{
+  font-size: 18px;
+  list-style-type:none;
+  //padding-right: 50px;
+  color: white;
+  #float: left;
+}
+  h1{
+    font-size: 30px;
+  }
+#border {
+  width: 75%;
+  margin-left: 15%;
+}
+button{
+  width: 80%;
+}
+}
+   </style>
+</head>
+<body>
+<div class="login">
+   <img id="" src="logoimg1.png" alt="school-bus-tracker" style="width:180px; height:100px"></img>
+  <p id="heads" style="text-align: center; margin-top: -100px;padding: 5px; font-size: 50px">School Bus Tracking System</p>
+ 
+</div>
+<div class="contain">
+<div id="border">
+<a href="trackltn.php"><button class="b1">TRACK LOCATION</button></a>
+<!-- <a href="time.php"><button class="b2">CHOOSE NOTIFICATION TIME</button></a> -->
+<a href="Chooselang.php"><button class="b3">CHOOSE LANGUAGE</button></a>
+<a href="feedback12.php"><button class="b4">GIVE FEEDBACK </button></a>
+<a href="Login.html"><button class="b5">EXIT</button></a>
+</div></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

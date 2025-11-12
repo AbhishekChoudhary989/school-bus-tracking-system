@@ -1,0 +1,131 @@
+*{
+	   margin: 0;
+	   padding: 0
+}
+a{
+  text-decoration: none;
+}
+.login{ 
+        background: cornflowerblue;
+      }
+.login nav{
+  border: 2px solid black;
+  background-color: blue;
+  margin-top: -20px;
+      }
+.login div ul li{
+  font-size: 20px;
+  list-style-type:none;
+  padding-right: 50px;
+  color: white;
+  #float: left;
+}
+fieldset{
+	border-radius: 15px;
+	border: 1px solid black;
+	background-color:#e8f3f8;
+      font:1.2em/1.5 sans-serif;
+	width: 38%;
+	margin: 4% auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+h2{
+text-align: center;
+font-size: 200%;
+color:steelblue;
+}
+span{
+	font-size: 15px;
+}
+form{
+margin:4% auto;
+width:60%;
+color:steelblue;
+}
+input {
+padding: 10px;
+font-size: inherit;
+}
+input[type="text"] {
+display:block;
+width:100%;
+border:2px solid steelblue;
+background:#FAF6D9;
+}
+input[type="password"]{
+display:block;
+width:100%;
+border:2px solid steelblue;
+background:#FAF6D9;
+}
+input[type="submit"] {
+width:100%;
+text-align: center;
+height:45px;
+border: none;
+background:steelblue;
+color: white;
+}
+input[type="submit"]:focus {
+width:100%;
+height:45px;
+border:solid steelblue;
+background:white;
+color:steelblue;
+}
+input:focus {
+background:white;
+}
+#fpass{
+	color: red;
+	font-size: 18px;
+	float: right;
+	margin-right: ;
+	margin-top: 2%;
+}
+#cpass{
+	color: red;
+	font-size: 18px;
+	float: left;
+	margin-top: 2%;
+}
+
+@media screen and (max-width: 1000px){
+			fieldset{
+				width: 55%;
+			      margin: 5% auto;
+				padding-top: 5%;
+			}
+			h2{
+				font-size: 160%;
+			}
+			form{
+				width: 60%;
+			}
+			#cpass{
+				font-size: 15px;
+			}
+			#fpass{
+				font-size: 15px;
+			}
+}
+@media screen and (max-width: 700px){
+			fieldset{
+				width: 80%;
+			      margin: 10% auto;
+				padding-top: 5%;
+			}
+			h2{
+				font-size: 140%;
+			}
+			form{
+				width: 70%;
+			}
+			#cpass{
+				font-size: 14px;
+			}
+			#fpass{
+				font-size: 14px;
+			}
+}

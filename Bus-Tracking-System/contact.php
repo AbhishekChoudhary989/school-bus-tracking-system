@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+  *{margin: 0px; padding: 0px; box-sizing: border-box;}
+body{
+//background: linear-gradient(to bottom, #ccffff 2%, #ffffff 97%);
+}
+.login nav{
+  border: 1px solid black;
+  background-color: blue;
+ // margin-top: -10px;
+      }
+.login div ul li{
+  font-size: 18px;
+  list-style-type:none;
+  margin-right: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  //color: white;
+  #float: left;
+}
+.login div ul li:hover{
+  background-color: black;
+  border-radius: 5px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.footer > .email {
+  margin-right: 10%;
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+#image{
+width:30%;
+//height:30%;
+ border-radius: 50%;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer > .email > .email{
+  display: block;
+  padding-top: 10px;
+  text-align: right;
+  text-decoration: none;
+  color:;
+}
+.topic{
+font-weight:bold;
+text-transform:uppercase;
+font-family:Copperplate;
+border-style: solid;
+border-radius:20%;  
+width: 90px;  
+float: left;  
+height: 40px;
+text-size:40px;
+margin-top:20px;
+margin-left:150px;
+color:white;
+padding:0px;
+}
+#website{
+text-transform:uppercase;
+text-size:20px;
+text-decoration:underline;
+font-weight:bold;
+}
+.text-one{
+text-align:center;
+margin-top:70px;
+
+}
+.text-two{
+text-align:center;
+margin-top:20px;
+}
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+</style>
+</head>
+<body>
+  <div class="login">
+ <div class="logo" style="background: royalblue; font-weight: bold;border: 2px solid mediumblue;">
+  <img id="" src="logoimg1.png" alt="school-bus-tracker" style="width:180px; height:100px"></img>
+  <p id="heads" style="text-align: center; margin-top: -90px;padding: 5px; font-size: 50px;font-family:'Righteous', cursive;">School Bus Tracking System</p></div>
+   
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"> </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto-light">
+      <li class="nav-item"><a class="nav-link" href="home.html.html">Home <span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+      <li class="nav-item active"><a class="nav-link" href="contact.php">Contant Us</a></li>
+    </ul>
+     <ul class="navbar-nav navbar-right">
+      <li class="nav-item"><a class="nav-link" style="float: right; margin-left:250px;" href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+<h2 class="animate__animated animate__backInDown" style="margin-top:30px; font-size:50px; text-align:center; color: blue;">Contact Us</h2>
+  <div class="row" style="width: 100%; height:px; background-color: cornflowerblue; color: white; font-size: 20px; padding: 50px;">
+     <center><p> The Office of Audit and Compliance is available to receive complaints at 202- 576-6860 from 8 a.m. to 7 p.m. Monday through Friday. To fully understand complaints, compliance specialists resolve concerns by using a variety of tools that include GPS technology, student databases, employee and student interviews and field monitoring. Complaints and incidents that are considered a priority and investigated immediately include: â€¢ issues affecting the health and safety of students; â€¢ failure to transport students; â€¢ moving traffic violations; and â€¢ improper or inadequate driver or attendant behavior. Complaints that are safety sensitive will be responded to within 24 hours or one business day. All other complaints receive follow-up within three to five business days depending on the nature of the complaint. .</p></center>
+</div><br>
+<section class="middle" style="background-color: red">
+<div class="row" style="background-color:#f4f4f6; height: 900px;">
+  <div class="column" style="background-color:;">
+       <div class="email details">
+       <center> <span class="" style="font-size: 20px;"><i class="fa fa-user">&nbspSend Us Mail</i></span></center>
+       <center><img id="image" src="gmail.gif" alt="gmail"></img>
+       <p>Kajol.pathak@somaiya.edu<br> Tannu@somaiya.edu</p></span></center>
+       </div>
+<br><br>
+       <div class="phone details">
+      <center><span class="" style="font-size: 20px;"><i class="fa fa-user">&nbspGive us Call</i></span></center>
+      <center><span class="" style="font-size: px;"><img id="image" src="contact.gif" alt="contact">
+        <p>Kajol: 02223343443<br> office:07838939839</p></span></center>
+              </div>
+<br><br>
+        <div class="address details">
+          <center> <span class="" style="font-size: 20px;"><i class="fa fa-user">&nbspAddress</i></span></center>
+          <center><img id="image" src="address.jpg" alt="address"></img>
+               <p>10/c anand nagar school <br>thane (West)</p></span></center>
+          <div class="text-two"><p id="website">website:</p>wwww.schoolbustracking.com</div>
+        </div>
+  </div>
+   <div class="column" style="background-color:;">
+    <br><br>
+    <fieldset style="background-color:white; padding: 50px; margin-top: 20px;">
+    <form>
+      <h3>Let's talk about your business</h3>
+    <div class="form-group"><label for="exampleInputEmail1">Name</label>
+      <input type="text" class="form-control" id="name" name="nam" aria-describedby="emailHelp" placeholder="Name"></div>
+    <div class="form-group"><label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" name="from" aria-describedby="emailHelp" placeholder="Subject"></div>
+    <div class="form-group"><label for="exampleInputPassword1">Subject</label>
+      <input type="text" class="form-control" id="Subject" name="sub" placeholder="Password"></div>
+    <div class="form-group"><label for="exampleInputPassword1">Message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" name="mess" rows="5" placeholder="Message"></textarea></div>
+      <input type="submit" name="send" class="btn btn-primary" value="Send Message" style="width:100%">
+    </form>
+  </fieldset>
+ </div>
+</div>
+</section>
+<div id="filename"></div>
+  <script> 
+   $(function(){
+       $('#filename').load("footer.html");
+   });
+    </script>       
+</body>
+</html>
+
+<?php
+
+if(isset($_POST['send']))
+{
+  $name=$_POST['nam'];
+  $froeml=$_POST['from'];
+  $Subj=$_POST['sub'];
+  $message=$_POST['mess'];
+
+     $to_email ="tannukesarwani17@gmail.com";
+     $subject="$Subj";
+     $body="This mail is from $name and message is $message ";
+     $sender_email=" $froeml";
+
+     if(mail($to_email,$subject,$body,$sender_email)){
+       echo "Email
+        send to $to_email";
+      }
+      else{
+       echo "failed..";
+     }
+}    
+?>
+

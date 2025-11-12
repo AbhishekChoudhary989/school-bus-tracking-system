@@ -1,0 +1,120 @@
+<?php 
+include("connect.php");
+error_reporting(0);
+session_start();
+$error = "";
+
+if(isset($_POST['submit']))
+{
+$druser = $_POST['drnam'];
+$drpass = $_POST['drpswd'];
+
+ $query="select * from add_driver where Driver_Name='$druser' and Password='$drpass' and status='inactive' ";
+ $result=mysqli_query($conn,$query);
+ $count=mysqli_num_rows($result);
+   if($count>0)
+   {
+      echo "Login Successful";
+      header("location:D2Login.php");
+      exit();
+   }
+   else
+   {
+     $error =  "** Incorrect Username or password **";
+   }
+ }
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Driver login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="newlog.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Poppins:wght@100&family=Righteous&family=Ultra&display=swap" rel="stylesheet">
+<style type="text/css">
+.login{ background: royalblue; font-weight: bold;}
+.login nav{border: 1px solid black; background-color: blue; //margin-top: -10px;}
+.login div ul li{font-size: 18px; list-style-type:none; margin-right: 50px; padding-right: 10px; padding-left: 10px;}
+.login div ul li:hover{background-color: black;border-radius: 5px;}
+#log{margin-top: 50px;}
+.error{color: red; text-align: center; font-size: 15px; margin-top: -10px; margin-bottom: 0px;}
+label{margin-top: 10px;}
+</style>
+<script>
+    function passvalues() {
+      var drivername=document.getElementById("nam").value;
+      localStorage.setItem("text",drivername);
+      // var email=document.getElementById("eml").value;
+      // localStorage.setItem("textvalue2",email);
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <div class="login">
+  <div class="logo" style="background: royalblue; font-weight: bold;border: 2px solid mediumblue;">
+  <img id="" src="logoimg1.png" alt="school-bus-tracker" style="width:180px; height:100px"></img>
+  <p id="heads" style="text-align: center; margin-top: -90px;padding: 5px; font-size: 50px;font-family:'Righteous', cursive;">School Bus Tracking System</p></div>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto-light">
+      <li class="nav-item"><a class="nav-link" href="home.html.html">Home <span class="sr-only">(current)</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="serc.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.php">Contant Us</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+  <div>
+  <fieldset id="log">
+    <h2>DRIVER LOGIN</h2>
+    <p class="bg-success text-white px-4 text-center"><?php echo $_SESSION['msg']; ?></p>
+      <form action="#" method="POST" onsubmit="return valide()">
+      <div class="error"><?php echo $error ?></div>
+      <label>Driver Name :</label>
+      <input type="text" name="drnam" id="nam" placeholder="Enter your name" autocomplete="off">
+      <span id="username"></span><br>
+      <label>Password :</label>
+      <input type="password" name="drpswd" id="pass" placeholder="Enter Password"> 
+      <span id="password">&nbsp&nbsp</span><br>
+      <a href="forgetpwd.php" id="fpass">Forget Password</a>
+      <br> <br>
+      <input type="submit" name="submit" value="LOGIN" id="submit" onclick="passvalues();">
+  </form>
+ </fieldset>
+ </div>
+ <script type="text/javascript">
+  function valide(){
+      var user = document.getElementById('nam').value;
+      var password = document.getElementById('pass').value;
+
+      if(user == ""){
+          document.getElementById('username').innerHTML = "**Please enter your Id";
+          return false;
+        }
+        else{
+          document.getElementById('username').innerHTML = "";
+        }
+        if(password == ""){
+          document.getElementById('password').innerHTML = "**Please enter your password";
+          return false;
+        }
+        else{
+          document.getElementById('password').innerHTML = "";
+        }
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

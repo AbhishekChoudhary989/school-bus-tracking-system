@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Animation</title>
+</head>
+<body>
+    
+    <div class='surface'></div>
+    <div class='bus'>
+        <img src='bus1.png' alt="Bus" style="width:100%">
+    </div>
+    <div class='van'>
+        <img src='van.png' alt="Van" style="width:100%">
+    </div>
+    <div class='cycle'>
+        <img src='cycle.png' alt="Cycle" style="width:100%">
+    </div>
+
+<style>
+    .surface{
+        height:300px;
+        width:700%;
+        display:block;
+        position:relative;
+        bottom:50px;
+        left:-600px;
+        background: url('surface.png');
+        background-repeat: repeat-x;
+        overflow: hidden;
+        z-index:-1;
+        animation : moveRight 10s linear infinite;
+    }
+    .bus{
+        position: absolute;
+        top:150px;
+        left:100%;
+        width:20%;
+        z-index:0;
+        animation: suspension 2s linear infinite,moveBus 12s linear infinite;
+    }
+    .van{
+        position: absolute;
+        top:165px;
+        left:7%;
+        width:15%;
+        z-index:-1;
+        animation: suspension 2s linear infinite,moveVan 8s linear infinite;
+    }
+    .cycle{
+        position: absolute;
+        top:200px;
+        left:2%;
+        width:4%;
+        z-index:-1;
+        animation : moveCycle 10s linear infinite;
+    }
+
+    @keyframes moveRight{ 100% {transform : translateX(520px)}} 
+    @keyframes moveBus{ 100% {transform : translateX(-1500px)}}
+    @keyframes moveVan{ 100% {transform : translateX(1300px)}}
+    @keyframes moveCycle{ 100% {transform : translateX(1000px)}}
+
+    @keyframes suspension { 
+        100% { transform: translateY(-1px)}
+        50% { transform: translateY(1px)}
+        25% { transform: translateY(-1px)}
+
+    }
+</style>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>About us</title>
+<style>
+*{margin:0; padding: 0; box-sizing: border-box; }
+.content1{ width:98%; height:60%; margin-top:2%; margin-left:10px;padding: 20px; background:white; font-size:19px;}
+feature{margin-top:6%; width:100%; height:30%;}
+section{display:flex; height:px; background:#fdf2f0; color:pink; padding: 5px;}
+.features-benefits .row {margin-right: -10px; margin-left: -10px; text-align:center;}
+.row{display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; //margin-right: -15px; margin-left: -15px;}
+.card{position:absolute; display: flex;left:30%; transform:translate(-50%,-50%); width:300px; height:400px; background:white;}
+.container11{margin-top:3%; height:22%; display: flex;}
+.track{width:200px; height:200px; border-radius:50%;}
+.btn{border: none; color: white; padding: 14px 28px; cursor: pointer; }
+.success{background-color:grey;} 
+.success:hover {background-color: #46a049;}
+li{align-text:center; font-size:19px; list-style-type: none;}
+#emergency{color:red;text-align:center;margin-left:79px;font-size:40px;}
+.column1{border:2px solid black;margin-top:3%;width:30%;background-color:#FF6666;padding: 15px; float: left;}
+.column2{border:2px solid black;margin-top:3%;width:30%;background-color:#FF6666;padding: 15px; margin-left: 35%;}
+.column3{border:2px solid black;margin-top:3%;width:30%;background-color:#FF6666;padding: 15px; margin-left: 70%;}
+.top1{border:1px solid  black;background-color:white;}
+.top2{width:70px;height:70px;border-radius:50%;}
+#confirm1{border:1px solid black;background-color:white;width:30%;font-size:18px;padding: 5px;}
+#confirm2{border:1px solid black;background-color:darkblue;width:30%;font-size:18px;padding: 5px;margin-left: 35%;}
+#confirm3{border:1px solid black;background-color:red;width:30%;font-size:18px;padding: 5px;margin-left: 70%;}
+#warning{width:20%;}
+button{padding: 5px 30px 5px 30px; margin: 10px 10px 10px 10px; color: black;}
+</style>
+
+<body>
+<div class="logo" style="background: royalblue; font-weight: bold;border: 2px solid mediumblue;">
+  <img id="" src="logoimg1.png" alt="school-bus-tracker" style="width:180px; height:100px"></img>
+  <p id="heads" style="text-align: center; margin-top: -90px;padding: 5px; font-size: 50px;font-family: 'Righteous',cursive;">School Bus Tracking System</p>
+</div>
+<div class="top1"><p id="emergency"><img class="top2" src="emergency.png" ></img>EMERGENCY</p>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-top: -70px; margin-right: 10px; padding-bottom: 15px;">
+     <ul class="navbar-nav navbar-right">
+    <li class="nav-item"><a class="nav-link" href="D2Login.php"><span class="glyphicon glyphicon-log-in"></span> Back</a></li>
+    </ul>
+ </div>
+</div>
+  
+<!image at navigation-->
+  <section>
+<div class="content1">	
+<div class="feature">
+  <div class="feature1">
+    <div class="row"><div class="col-sm-12">
+    <div class="column1"><h2 style="color:white; "> STUCK IN TRAFFIC</h2><img class="track" src="traffic.jpg"></img>
+        <button class="btn success"  onclick="confirmation1()">SEND</button>
+    </div>
+    <div id="confirm1" hidden><h3>Confirmation</h3><p>Do you really want to send a mail?</p>
+      <button class="warning" onclick="confirmYes1()">Yes</button><button onclick="confirmNo1()">No</button>  
+    </div>
+
+    <div class="column2"><h2  style="color:white; "> BUS ISSUE </h2><img class="track" src="puncher.jpg"></img>
+        <button class="btn success"  onclick="confirmation2()">SEND</button>
+     </div>
+    <div id="confirm2" hidden><h3>Confirmation</h3><p>Do you really want to send a mail?</p>
+    <button class="warning" onclick="confirmYes2()">Yes</button><button onclick="confirmNo2()">No</button>  
+    </div>
+
+    <div class="column3"><h2 style="color:white;"> NETWORK ISSUE</h2><img class="track" src="network.jpg"></img>
+       <button class="btn success"  onclick="confirmation3()">SEND</button></a>
+    </div>
+    <div id="confirm3" hidden><h3>Confirmation</h3><p>Do you really want to send a mail?</p>
+    <button class="warning" onclick="confirmYes3()">Yes</button><button onclick="confirmNo3()">No</button>  
+    </div>
+
+    </div></div>
+
+	  
+	</div>
+</div>
+</div>
+</section>
+<script>
+
+  function confirmation1() {document.getElementById("confirm1").hidden=false}
+  function confirmYes1() {location.href = 'mail1.php';}
+  function confirmNo1() {document.getElementById("confirm1").hidden=true}
+
+  function confirmation2() {document.getElementById("confirm2").hidden=false}
+  function confirmYes2() {location.href = 'mail2.php';}
+  function confirmNo2() {document.getElementById("confirm2").hidden=true}
+
+  function confirmation3() {document.getElementById("confirm3").hidden=false}
+  function confirmYes3() {location.href = 'mail3.php';}
+  function confirmNo3() {document.getElementById("confirm3").hidden=true}
+
+</script>
+</body>
+</html>

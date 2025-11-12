@@ -1,0 +1,205 @@
+.surface{
+        height:30px;
+        width:00%;
+        display:block;
+        position:relative;
+        bottom:100px;
+        left:-600px;
+        background: url('surface.png');
+        background-repeat: repeat-x;
+        overflow: hidden;
+        z-index:-1;
+        top:0px;
+        animation : moveRight 10s linear infinite;
+    }
+.bus{
+        position: absolute;
+        top:450px;
+        left:100%;
+        width:20%;
+        z-index:0;
+        animation: suspension 2s linear infinite,moveBus 12s linear infinite;
+    }
+.van{
+        position: absolute;
+        top:450px;
+        left:7%;
+        width:15%;
+        z-index:-1;
+        animation: suspension 2s linear infinite,moveVan 8s linear infinite;
+    }
+.cycle{
+        position: absolute;
+        top:500px;
+        left:2%;
+        width:4%;
+        z-index:-1;
+        animation : moveCycle 10s linear infinite;
+    }
+
+    @keyframes moveRight{ 100% {transform : translateX(520px)}} 
+    @keyframes moveBus{ 100% {transform : translateX(-1500px)}}
+    @keyframes moveVan{ 100% {transform : translateX(1300px)}}
+    @keyframes moveCycle{ 100% {transform : translateX(1000px)}}
+
+    @keyframes suspension { 
+        100% { transform: translateY(-1px)}
+        50% { transform: translateY(1px)}
+        25% { transform: translateY(-1px)}
+}
+.second_box {
+  margin-top:80px;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid black;
+  background-color:red;
+  display: block;
+  align-items: center;
+}
+.third_box {
+  margin-top:0px;
+  width: 100%;
+  border: 1px solid black;
+  background-color:white;
+  display: block;
+  align-items: center;
+}
+.fourth_box{
+display:block;
+background-color:green;
+margin-left:35%;
+margin-top:-18%;
+}
+.fouth_box{
+display:block;
+height:35vh;
+background-color:red;
+}
+#description1{
+font-size:30px;
+color:white;
+    text-align: center;
+    justify-content: center;
+}
+h2{
+font-size:30px;
+font-weight:bold;
+}
+
+#description2{
+font-size:25px;
+color:red;
+text-align:left;
+}
+#school-bus-tracker{
+line-height: ;
+ width:32%;
+ position: relative;
+}
+#img2{
+line-height: 0;
+width:30%;
+    position: relative;
+}
+.sixth_box{
+ width: 100%;
+  border: 1px solid black;
+background-color:white;
+display: block;
+font-size:30px;
+font-weight:bold;
+height:500px;
+
+}
+.detail2{
+font-size:20px;
+color:red;
+text-align:left;
+margin-left:450px;
+margin-top:-30%;
+}
+h3{
+margin-top:-2%;
+padding:40px;
+
+text-align:center;
+background-color:blue;
+}
+#detail3{
+text-decoration: underline;
+color:blue;
+text-align:center;
+}
+#detail1{
+text-align:center;
+margin: 20px;
+margin-left:50px;
+padding: 20px;
+color:black;
+font-style: Fantasy;
+}
+.upper{
+  border: 0px solid black;
+  height: 600px;
+background-color:rgb(49, 43, 43);
+}
+.lower{
+    background-color: rgb(49, 43, 43);
+    height: 55%;
+    color:white;
+    position: relative;
+}
+.lower-left {
+    position: absolute;
+}
+.lower-left li{
+    margin-bottom: 30px;
+}
+.lower-left ul{
+    padding-top: 40px;
+    padding-left:130px;
+    list-style-type: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.lower-left h2{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.lower-mid ul{
+    position: absolute;
+    left: 540px;
+    top: 35px;
+    text-align: center;
+    list-style-type: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.lower-mid li{
+    margin-bottom: 30px;
+}
+.lower-mid h2{
+    padding-bottom: 10px;
+    font-size: 30px;
+}   
+
+.lower-right ul{
+    position: absolute;
+    left: 950px;
+    top: 35px;
+    text-align: center;
+    list-style-type: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.lower-right1 li{
+    margin-bottom: 30px;
+}
+.lower-right1 h2{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.lower-right2 ul{
+    top: 300px;
+}

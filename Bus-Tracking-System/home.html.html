@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Home page</title>
+<style>
+.login{ }
+.login nav{border: 1px solid black; //background-color: blue;}
+.login div ul li{font-size: 18px; list-style-type:none; margin-right: 50px; padding-right: 10px; padding-left: 10px;}
+.login div ul li:hover{background-color: black;border-radius: 5px;}
+.surface{height:300px; width:100%; display:block; position:relative; bottom:100px; background: url('surface.png');background-repeat: repeat-x; overflow: hidden; z-index:-1;top:0px; // animation : moveRight 10s linear infinite;}
+.bus{position: absolute; top:400px; left:100%; width:20%; z-index:0; animation: suspension 2s linear infinite,moveBus 12s linear infinite;}
+.van{position: absolute; top:400px; left:7%; width:15%; z-index:-1; animation: suspension 2s linear infinite,moveVan 8s linear infinite;}
+.cycle{position: absolute; top:400px; left:2%; width:4%; z-index:-1; animation : moveCycle 10s linear infinite;}
+    @keyframes moveRight{ 100% {transform : translateX(520px)}} 
+    @keyframes moveBus{ 100% {transform : translateX(-1500px)}}
+    @keyframes moveVan{ 100% {transform : translateX(1300px)}}
+    @keyframes moveCycle{ 100% {transform : translateX(1000px)}}
+    @keyframes suspension { 
+        100% { transform: translateY(-1px)}
+        50% { transform: translateY(1px)}
+        25% { transform: translateY(-1px)}
+    }
+.second_box {margin-top:8%; width: 100%; padding: 40px; background-color:white; display: block; align-items: center;}
+.third_box {margin-top:0%; width: 100%; height: 45%; padding: 20px; background-color:#f4f4f6; display: flex; //align-items: center;}
+.fourth_box{display:block; //background-color:blue; margin:2%;}
+.sixth_box{width: 100%; //background-color:red; display: block; margin-top: 5%; padding: 20px; font-size:30px; font-weight:bold; height:50%;}
+#description1{font-size:40px; color:black; text-align: center;justify-content: center;}
+#description2{font-size:18px; color:black;justify-content: center; display: flex;}
+#school-bus-tracker{line-height:0; width:400px; position: relative; margin-top: 5%; display: flex;}
+#img2{line-height: 0; width:40%; position: relative;}
+h1{font-size:30px; font-weight:bold;}
+h3{margin-top:-2%; padding:40px;text-align:center;background-color:blue;}
+#detail1{text-align:center; padding: 100px; color:black;font-size: 30px; font-style: Fantasy;}
+#detail2{font-size:20px; color:black; text-align:left; margin-left:480px; margin-top:-18%;}
+#detail3{text-decoration: underline; color:blue; text-align:center; margin-left: 25px; font-size: 28px;}
+</style>
+</head>
+<body>
+<div class="login">
+  <div class="logo" style="background: royalblue; font-weight: bold;border: 2px solid mediumblue;">
+  <img id="" src="logoimg1.png" alt="school-bus-tracker" style="width:180px; //height:80px"></img>
+  <p id="heads" style="text-align: center; margin-top: -90px;padding: 5px; font-size: 50px;font-family: 'Righteous', cursive;">School Bus Tracking System</p>
+   </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"> </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto-light">
+      <li class="nav-item active"><a class="nav-link" href="home.html.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="serc.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.php">Contant Us</a></li>
+    </ul>
+     <ul class="navbar-nav navbar-right">
+      <li class="nav-item" style="float: right; margin-left:250px;"><a class="nav-link" href="Login.html"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+    </ul>
+ </div>
+</nav>
+</div>
+<! animation>
+    <div class='surface'></div>
+    <div class='bus'><img src='bus1.png' alt="Bus" style="width:100%"></div>
+    <div class='van'><img src='van.png' alt="Van" style="width:100%"></div>
+    <div class='cycle'><img src='cycle.png' alt="Cycle" style="width:100%"></div>
+<!close animation>
+
+<div class="second_box"><p id="description1">Efficient Operations & Safe Students & Relaxed Parents.</p></div>
+<div class="third_box"><img  id="img2" src="location.png" alt="location"></img>
+<div class="fourth_box">
+<h1>A GPS School Bus Tracker for Student Safety & Operational Efficiency</h1>
+<p id="description2">School bus tracker solution provides school administration an efficient way of monitoring fleet of school vehicles and students' trips. <br>Our school bus tracker is user-friendly yet foolproof. <br>School authorities can view real-time status of school buses such as location, speed, routes, delay, driver details, and a host of other information.Parents get alerts when the bus approaches the stop or a child boards or deboards the bus. <br>This gives parents control over their children's safety and security.The school management can monitor and track live status of buses across branches via a centralized dashboard.<br> Our school bus tracker can also easily integrate with access control and security systems.</p>
+</div>
+</div>
+<div class="sixth_box">
+<span id="detail1">Parents can have peace of mind by monitoring the travel status of their child.</span><br>
+<img id="school-bus-tracker" src="7_driver.gif" alt="school-bus-tracker"></img>
+<div id="detail2"><span id="detail3">SafeBus Parent Application</span><br><br>
+<ul >
+ <li>Parents can keep track of the transport using the school bus tracking</li>
+ <li>GPS sends the exact location of the vehicle to each connected device.<br> This ensures that the parents are aware of the time at which the vehicle arrives or departs at the designated stoppage point.</li>
+
+<li>Enables parents to reach the pickup point at the exact time when the bus is nearby. <br>They need not go to the point too early or too late as they are aware of the exact location.</li>
+</ul>
+</div>
+</div><br>
+ <div id="filename"></div>
+  <script> 
+   $(function(){
+       $('#filename').load("footer.html");
+   });
+    </script>
+</body>
+</html>
